@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+   int t,n,i,x,p;
+   scanf("%d",&t);
+   while(t--)
+   {
+       scanf("%d",&n);
+       x=n%2;
+       if(x==0)
+       {
+            for(i=0;i<(n/2);i++)
+            {
+                printf("1");
+            }
+            printf("\n");
+       }
+       else
+       {
+           p=n/2-1;
+           printf("7");
+           for(i=0;i<p;i++)
+            {
+                printf("1");
+            }
+            printf("\n");
+       }
+   }
+}
